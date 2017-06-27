@@ -1,0 +1,11 @@
+Data Source: Amsterdam availability data scraped from AirBnB on December 24th. Question: What are the popular neighborhoods in Amsterdam?
+ANSWER: This fails the exceptional event rule because it falls right before a holiday when many people go home. They should pick several days at random to get a better data set.
+Possible New Question: What are popular neighborhoods in Amsterdam during the holidays?
+
+Data Source: Mental health services use on September 12, 2001 in San Francisco, CA and New York City, NY. Question: How do patterns of mental health service use vary between cities?
+ANSWER: This also fails the exceptional event rule since it came right after September 11th terrorist attacks. It would be better to use random days throughout the year.
+Possible New Question: What were the differences in the patterns of mental health service use between NYC and SF the day after September 11th.
+
+Data Source: Armenian Pub Survey. Question: What are the most common reasons Armenians visit local pubs?
+ANSWER: This data is mostly students, so it is not representative of the population as a whole (unless you limit the population in the question). Also, there was a 16 yr old who listed himself as a CEO, so I don't know how reliable the data is.
+Possible New Question: What are the most common reasons for Armenian students to visit local pubs?
