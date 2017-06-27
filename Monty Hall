@@ -1,0 +1,5 @@
+Write up some notes on this problem, including how you think Bayes' Rule might apply. Drop a link to your notes below and discuss it with your mentor.
+
+If you switch doors, you’ll have a 66% chance of being correct vs a 33% chance of being correct if you stay with your choice. Most people will look at the situation in the microcosm rather than the macrocosm of the 3 door population, so they reset their information and look at it as a 2 door population after 1 door is opened. However, since the host has opened one of the doors for you, you now have 33% given to you to allow you to make your choice, so you should choose the other one to get a combined 66% chance of choosing correctly.
+
+I read online that it is easier to think of this problem in larger numbers. If you have 1,000,000 doors instead of 3 and you pick one and the host opens all of the other doors (999,998 doors) but one, would you stick with the same door you picked? No, but the likelihood you picked the correct door on the first guess is literally one in a million, but the likelihood the other door is the correct answer is 999,999 / 1,000,000 or 99.9999% likely to be the answer.
