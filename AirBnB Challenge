@@ -1,0 +1,70 @@
+Using the Athens Listings Data
+#1
+SELECT
+  *,
+  MAX(Price) Price
+FROM
+  listings
+(Answer: ID 4219518, We can get all of the information including location, host name, features of the place, how fast the host responds, weblinks to photos, etc)
+
+#2
+WITH neighborhoods AS (
+    SELECT
+        l.id,
+        l.neighbourhood_cleansed,
+        c.listing_id,
+		c.available
+    FROM listings l
+    JOIN calendar c
+        ON l.id = c.listing_id
+    WHERE
+        c.available != "t"
+    GROUP BY 1
+)
+
+SELECT
+	  neighborhoods.neighbourhood_cleansed,
+	  COUNT(available) available
+FROM
+	  neighborhoods
+GROUP BY 1
+ORDER BY available desc
+(Answer: To find the most popular, I took the neighborhoods with the most occupied days (occupied days = f, not t) and came up with the below:
+"ΕΜΠΟΡΙΚΟ ΤΡΙΓΩΝΟ-ΠΛΑΚΑ"	"648"
+"ΜΟΥΣΕΙΟ-ΕΞΑΡΧΕΙΑ-ΝΕΑΠΟΛΗ"	"458"
+"ΚΟΥΚΑΚΙ-ΜΑΚΡΥΓΙΑΝΝΗ"	"326"
+)
+
+#3
+WITH prices AS (
+	SELECT
+		date,
+		price
+	FROM calendar
+	WHERE price > 0
+)
+
+SELECT
+	date,
+	AVG(price)
+FROM prices
+GROUP BY 1
+
+(I got rid of the NULLs by creating a table with no NULL values and then took the average price and grouped by dates. This for some reason gave me 0.0 for averages still though)
+
+WITH prices AS (
+	SELECT
+		date,
+		available
+	FROM calendar
+	WHERE available != "t"
+)
+
+SELECT
+	date,
+	COUNT(available)
+FROM prices
+GROUP BY 1
+ORDER BY available DESC 
+
+(ANSWER: May 9th was the busiest day with 3894 occupied rooms. The dates around this date all were in the top 5.)
