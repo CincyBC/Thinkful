@@ -1,0 +1,10 @@
+What is the 1994 rate of juvenile delinquency in the U.S.? BAD - This is a single number and not a research question.
+What can we do to reduce juvenile delinquency in the U.S.? BAD - This is problematic because it is too vague. We know what outcome we want (reduction in Juvenile delinquency), but no plan is proposed. How can we collect data on it?
+Does education play a role in reducing juvenile delinquents' return to crime? GOOD depending on the definition of education and the ability to collect data on it.
+How many customers does AT&T currently serve in Washington, DC? BAD - This is a single number and not a research question.
+What factors lead consumers to choose AT&T over other service providers? GOOD - The question is good, but it will take resources to collect data. 
+How can AT&T attract more customers? BAD - This question is too vague and general. 
+Why did the Challenger Shuttle explode? BAD - This is an engineering question and not a question appropriate for a data scientist.
+Which genes are associated with increased risk of breast cancer? Good - It has targets and is measureable in numbers.
+Is it better to read to children at night or in the morning? BAD - What's the definition of "better"? Better results in school? Reading? We need something to measure.
+How does Google’s search algorithm work? BAD - This is an engineering question and not something answerable by numbers.
