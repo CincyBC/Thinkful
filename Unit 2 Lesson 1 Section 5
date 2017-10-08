@@ -1,0 +1,14 @@
+Are the variables Categorical, Ordinal, Interval, or Ratio
+cntry = country = categorial
+year = interval
+idno = ID Number = categorical
+tvtot = Total time watching TV = Ratio
+ppltrs = Trust in others = Ratio
+pplfair = People are fair = Ratio
+pplhlp = People are helpful = Ratio
+Happy = Ratio
+sclmeet = how often do you meet people = Ratio
+sclact = how often do you do social activities = Ratio
+gndr = gender = categorical
+agea = Age = Ratio
+Partner = Categorical
