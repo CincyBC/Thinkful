@@ -1,0 +1,7 @@
+1) Regression (Continuous)
+2) Classification (Categorical: Colors)
+3) Either could be used, depending on what you want. 
+4) Classification (Categorial: Yes/No)
+5) Either could be used depending on what you want. I'd use regression for an average.
+6) Either could be used since there are a limited number of days and you are either sick or not.
+7) It depends on how effectiveness is measured. Is it measured as a continuous number or yes/no based on certain conditions?
