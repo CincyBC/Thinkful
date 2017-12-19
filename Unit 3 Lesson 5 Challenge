@@ -1,0 +1,37 @@
+You now have a fairly substantial starting toolbox of supervised learning methods that you can use to tackle a host of exciting problems. To make sure all of these ideas are organized in your mind, please go through the list of problems below. For each, identify which supervised learning method(s) would be best for addressing that particular problem. Explain your reasoning and discuss your answers with your mentor.
+
+1.    Predict the running times of prospective Olympic sprinters using data from the last 20 Olympics.
+
+A: OLS Linear Regression to develop a trend line and predict this continuous variable. This would have a limited use because in the case of an upward trend, there are physical limitations on human capabilities. You would also need to choose historical data wisely since a lot has changed in the last 80 years and using data from a time when athletes were semi-pro and not groomed from a young age to compete will skew your results. Shortening the timeframe of data will fix that but will increase your standard error by decreasing your sample size.
+
+2.    You have more features (columns) than rows in your dataset.
+
+A: Using Lasso will help with this issue because it will penalize having too many features through taking the absolute value of the coefficients.
+
+3.    Identify the most important characteristic predicting likelihood of being jailed before age 20.
+
+A: This is a classification problem that needs to be solved as transparently as possible to isolate the most important characteristic (i.e. feature).
+
+4.    Implement a filter to “highlight” emails that might be important to the recipient
+
+A: This is a classification problem that naïve bayes would handle well using little computational power. Naïve Bayes are good classifiers, but not good estimators and are well suited to problems like SPAM filters and sentiment recognition.
+
+5.    You have 1000+ features.
+
+A: Use a function like Principle Component Analysis or Random Forest to lower dimensionality before processing.
+
+6.    Predict whether someone who adds items to their cart on a website will purchase the items.
+
+A: This is a classification problem. If the data is able to identify through cookies if this is a repeat customer, the data would be historical. Using something like a Random Forest would give you an accurate estimate of whether they will purchase something in the cart.
+
+7.    Your dataset dimensions are 982400 x 500
+
+A: With this many rows, you’re going to be looking to minimize your processing requirements. Random Forest and Support Vector Machines will require a lot of processing power and should be avoided.
+
+8.    Identify faces in an image.
+
+A: This is a classification problem where each of the pixels becomes a dimension in your analysis, so the best model would be naïve bayes, which uses very little computational power.
+
+9.    Predict which of three flavors of ice cream will be most popular with boys vs girls.
+
+A: This is a classification problem. Something like KNN would work well, but Random Forest will probably give you higher accuracy if the data isn’t too large.
