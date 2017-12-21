@@ -18,20 +18,20 @@ A: This is a classification problem that naïve bayes would handle well using li
 
 5.    You have 1000+ features.
 
-A: Use a function like Principle Component Analysis or Random Forest to lower dimensionality before processing.
+A: You can use a function like Principle Component Analysis or Random Forest to lower dimensionality before processing and then model it with lasso to help limit features.
 
 6.    Predict whether someone who adds items to their cart on a website will purchase the items.
 
-A: This is a classification problem. If the data is able to identify through cookies if this is a repeat customer, the data would be historical. Using something like a Random Forest would give you an accurate estimate of whether they will purchase something in the cart.
+A: This is a classification problem. If the data is able to identify through cookies if this is a repeat customer, the data would be historical. Traditionally, logistic regression was used to determine which customers would eventually make purchases from their cart.
 
 7.    Your dataset dimensions are 982400 x 500
 
-A: With this many rows, you’re going to be looking to minimize your processing requirements. Random Forest and Support Vector Machines will require a lot of processing power and should be avoided.
+A: With this many rows, you’re going to be looking to minimize your processing requirements. Random Forest and Support Vector Machines will require a lot of processing power and should be avoided. Lasso or Ridge would work best with this size of a data set.
 
 8.    Identify faces in an image.
 
-A: This is a classification problem where each of the pixels becomes a dimension in your analysis, so the best model would be naïve bayes, which uses very little computational power.
+A: This is a classification problem where each of the pixels becomes a dimension in your analysis and Support Vector Machines were traditionally used for this type of problem.
 
 9.    Predict which of three flavors of ice cream will be most popular with boys vs girls.
 
-A: This is a classification problem. Something like KNN would work well, but Random Forest will probably give you higher accuracy if the data isn’t too large.
+A: This is a classification problem. Accuracy is not really an issue with this problem, so a polynomial logistic regression model would work for this problem.
